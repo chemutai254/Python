@@ -1,0 +1,78 @@
+h1 {
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: green;
+    text-decoration: underline;
+}
+
+p {
+    color: black;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: pink;
+    text-decoration-line: underline;
+}
+
+a:active {
+    color: green;
+}
+
+#mydiv {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    transform: rotate(20deg);
+    transform: skewX(20deg);
+    transform: rotateY(150deg);
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellowgreen;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    100% {
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+div {
+    border: 1px solid black;
+}
